@@ -6,7 +6,7 @@ app = customtkinter.CTk()
 customtkinter.set_appearance_mode("dark")
 customtkinter.set_default_color_theme("green")
 app.title("Sahrul Cell")
-app.geometry("1200x800+20+150")
+app.geometry("1200x800+100+100")
 
 app.columnconfigure(0,weight=1)
 app.columnconfigure(1,weight=1)
@@ -30,131 +30,131 @@ app.rowconfigure(12,weight=1)
 app.rowconfigure(13,weight=1)
 app.rowconfigure(14,weight=1)
 
-l1 = customtkinter.CTkLabel(app, text="Sahrul cell", fg_color="transparent",font=("Roboto",45))
-l1.grid(column=0, row=0, pady=20)
+l1 = customtkinter.CTkLabel(app, text="--> SAHRUL CELL ", fg_color="transparent",font=("Roboto",40), anchor="w" , text_color="white")
+l1.grid(columnspan=4, row=0, pady=20, padx=20, sticky="wens")
 
 # Kiri
-l2 = customtkinter.CTkLabel(app, text="Sabun Mandi Rp.5.000/batang", fg_color="transparent",font=("Roboto",20))
-l2.grid(row=1, column=0, pady=15, padx=(60,0))
+l2 = customtkinter.CTkLabel(app, text="Sabun Mandi Rp.5.000/batang", fg_color="transparent",font=("Roboto",20), anchor="w", text_color="white")
+l2.grid(row=1, column=0, pady=15, padx=(60,0), sticky="we")
 
 e1 = customtkinter.CTkEntry(app, width=50)
 e1.grid(row=1, column=1, padx=(0,0))
 
-l3 = customtkinter.CTkLabel(app, text="Shampo Rp.1.000/Sachet", fg_color="transparent",font=("Roboto",20))
-l3.grid(row=2, column=0, pady=15, padx=(60,0))
+l3 = customtkinter.CTkLabel(app, text="Shampo Rp.1.000/Sachet", fg_color="transparent",font=("Roboto",20), anchor="w", text_color="white")
+l3.grid(row=2, column=0, pady=15, padx=(60,0), sticky="we")
 
 e2 = customtkinter.CTkEntry(app, width=50)
 e2.grid(row=2, column=1)
 
-l4 = customtkinter.CTkLabel(app, text="Deterjen Rp.6.000/Sachet", fg_color="transparent",font=("Roboto",20))
-l4.grid(row=3, column=0, pady=15, padx=(60,0))
+l4 = customtkinter.CTkLabel(app, text="Deterjen Rp.6.000/Sachet", fg_color="transparent",font=("Roboto",20), anchor="w", text_color="white")
+l4.grid(row=3, column=0, pady=15, padx=(60,0), sticky="we")
 
 e3 = customtkinter.CTkEntry(app, width=50)
 e3.grid(row=3, column=1)
 
-l5 = customtkinter.CTkLabel(app, text="Pasta Gigi Rp.10.000", fg_color="transparent",font=("Roboto",20))
-l5.grid(row=4, column=0, pady=15, padx=(60,0))
+l5 = customtkinter.CTkLabel(app, text="Pasta Gigi Rp.10.000", fg_color="transparent",font=("Roboto",20), anchor="w", text_color="white")
+l5.grid(row=4, column=0, pady=15, padx=(60,0), sticky="we")
 
 e4 = customtkinter.CTkEntry(app, width=50)
 e4.grid(row=4, column=1)
 
-l6 = customtkinter.CTkLabel(app, text="Sikat Gigi Rp.4.000", fg_color="transparent",font=("Roboto",20))
-l6.grid(row=5, column=0, pady=15, padx=(60,0))
+l6 = customtkinter.CTkLabel(app, text="Sikat Gigi Rp.4.000", fg_color="transparent",font=("Roboto",20), anchor="w", text_color="white")
+l6.grid(row=5, column=0, pady=15, padx=(60,0), sticky="we")
 
 e5 = customtkinter.CTkEntry(app, width=50)
 e5.grid(row=5, column=1)
 
-l7 = customtkinter.CTkLabel(app, text="Sabun cuci piring Rp.12.000", fg_color="transparent",font=("Roboto",20))
-l7.grid(row=6, column=0, pady=15, padx=(60,0))
+l7 = customtkinter.CTkLabel(app, text="Sabun cuci piring Rp.12.000", fg_color="transparent",font=("Roboto",20), anchor="w", text_color="white")
+l7.grid(row=6, column=0, pady=15, padx=(60,0), sticky="we")
 
 e6 = customtkinter.CTkEntry(app, width=50)
 e6.grid(row=6, column=1)
 
-l8 = customtkinter.CTkLabel(app, text="Mie instan Rp.4.000/bungkus", fg_color="transparent",font=("Roboto",20))
-l8.grid(row=7, column=0, pady=15, padx=(60,0))
+l8 = customtkinter.CTkLabel(app, text="Mie instan Rp.4.000/bungkus", fg_color="transparent",font=("Roboto",20), anchor="w", text_color="white")
+l8.grid(row=7, column=0, pady=15, padx=(60,0), sticky="we")
 
 e7 = customtkinter.CTkEntry(app, width=50)
 e7.grid(row=7, column=1)
 
-l9 = customtkinter.CTkLabel(app, text="Minyak goreng Rp.28.000/Liter", fg_color="transparent",font=("Roboto",20))
-l9.grid(row=8, column=0, pady=15, padx=(60,0))
+l9 = customtkinter.CTkLabel(app, text="Minyak goreng Rp.28.000/Liter", fg_color="transparent",font=("Roboto",20), anchor="w", text_color="white")
+l9.grid(row=8, column=0, pady=15, padx=(60,0), sticky="we")
 
 e8 = customtkinter.CTkEntry(app, width=50)
 e8.grid(row=8, column=1)
 
-l10 = customtkinter.CTkLabel(app, text="Air mineral 600ml Rp.4.000", fg_color="transparent",font=("Roboto",20))
-l10.grid(row=9, column=0, pady=15, padx=(60,0))
+l10 = customtkinter.CTkLabel(app, text="Air mineral 600ml Rp.4.000", fg_color="transparent",font=("Roboto",20), anchor="w", text_color="white")
+l10.grid(row=9, column=0, pady=15, padx=(60,0), sticky="we")
 
 e9 = customtkinter.CTkEntry(app, width=50)
 e9.grid(row=9, column=1)
 
-l11 = customtkinter.CTkLabel(app, text="Beras Rp.10.000/Kg", fg_color="transparent",font=("Roboto",20))
-l11.grid(row=10, column=0, pady=15, padx=(60,0))
+l11 = customtkinter.CTkLabel(app, text="Beras Rp.10.000/Kg", fg_color="transparent",font=("Roboto",20), anchor="w", text_color="white")
+l11.grid(row=10, column=0, pady=15, padx=(60,0), sticky="we")
 
 e10 = customtkinter.CTkEntry(app, width=50)
 e10.grid(row=10, column=1)
 
 # Kanan
 
-l12 = customtkinter.CTkLabel(app, text="Telur Rp.2.000/butir", fg_color="transparent",font=("Roboto",20))
-l12.grid(row=1, column=3, pady=15)
+l12 = customtkinter.CTkLabel(app, text="Telur Rp.2.000/butir", fg_color="transparent",font=("Roboto",20), anchor="w", text_color="white")
+l12.grid(row=1, column=3, pady=15, sticky="we")
 
 e11 = customtkinter.CTkEntry(app, width=50)
-e11.grid(row=1, column=4, padx=(0,120))
+e11.grid(row=1, column=4, padx=(0,100))
 
-l13 = customtkinter.CTkLabel(app, text="Sirup Rp.12.000/botol", fg_color="transparent",font=("Roboto",20))
-l13.grid(row=2, column=3, pady=15)
+l13 = customtkinter.CTkLabel(app, text="Sirup Rp.12.000/botol", fg_color="transparent",font=("Roboto",20), anchor="w", text_color="white")
+l13.grid(row=2, column=3, pady=15, sticky="we")
 
 e12 = customtkinter.CTkEntry(app, width=50)
-e12.grid(row=2, column=4, padx=(0,120))
+e12.grid(row=2, column=4, padx=(0,100))
 
-l14 = customtkinter.CTkLabel(app, text="Gula pasir Rp.10.000/kg", fg_color="transparent",font=("Roboto",20))
-l14.grid(row=3, column=3, pady=15)
+l14 = customtkinter.CTkLabel(app, text="Gula pasir Rp.10.000/kg", fg_color="transparent",font=("Roboto",20), anchor="w", text_color="white")
+l14.grid(row=3, column=3, pady=15, sticky="we")
 
 e13 = customtkinter.CTkEntry(app, width=50)
-e13.grid(row=3, column=4, padx=(0,120))
+e13.grid(row=3, column=4, padx=(0,100))
 
-l15 = customtkinter.CTkLabel(app, text="Teh Sachet Rp.5.000", fg_color="transparent",font=("Roboto",20))
-l15.grid(row=4, column=3, pady=15)
+l15 = customtkinter.CTkLabel(app, text="Teh Sachet Rp.5.000", fg_color="transparent",font=("Roboto",20), anchor="w", text_color="white")
+l15.grid(row=4, column=3, pady=15, sticky="we")
 
 e14 = customtkinter.CTkEntry(app, width=50)
-e14.grid(row=4, column=4, padx=(0,120))
+e14.grid(row=4, column=4, padx=(0,100))
 
-l16 = customtkinter.CTkLabel(app, text="Kopi Sachet Rp.3.000", fg_color="transparent",font=("Roboto",20))
-l16.grid(row=5, column=3, pady=15)
+l16 = customtkinter.CTkLabel(app, text="Kopi Sachet Rp.3.000", fg_color="transparent",font=("Roboto",20), anchor="w", text_color="white")
+l16.grid(row=5, column=3, pady=15, sticky="we")
 
 e15 = customtkinter.CTkEntry(app, width=50)
-e15.grid(row=5, column=4, padx=(0,120))
+e15.grid(row=5, column=4, padx=(0,100))
 
-l17 = customtkinter.CTkLabel(app, text="Susu Kental Manis Rp.7.000", fg_color="transparent",font=("Roboto",20))
-l17.grid(row=6, column=3, pady=15)
+l17 = customtkinter.CTkLabel(app, text="Susu Kental Manis Rp.7.000", fg_color="transparent",font=("Roboto",20), anchor="w", text_color="white")
+l17.grid(row=6, column=3, pady=15, sticky="we")
 
 e16 = customtkinter.CTkEntry(app, width=50)
-e16.grid(row=6, column=4, padx=(0,120))
+e16.grid(row=6, column=4, padx=(0,100))
 
-l18 = customtkinter.CTkLabel(app, text="Mentega Rp.8.000", fg_color="transparent",font=("Roboto",20))
-l18.grid(row=7, column=3, pady=15)
+l18 = customtkinter.CTkLabel(app, text="Mentega Rp.8.000", fg_color="transparent",font=("Roboto",20), anchor="w", text_color="white")
+l18.grid(row=7, column=3, pady=15, sticky="we")
 
 e17 = customtkinter.CTkEntry(app, width=50)
-e17.grid(row=7, column=4, padx=(0,120))
+e17.grid(row=7, column=4, padx=(0,100))
 
-l19 = customtkinter.CTkLabel(app, text="Tepung terigu Rp.17.000/Kg", fg_color="transparent",font=("Roboto",20))
-l19.grid(row=8, column=3, pady=15)
+l19 = customtkinter.CTkLabel(app, text="Tepung terigu Rp.17.000/Kg", fg_color="transparent",font=("Roboto",20), anchor="w", text_color="white")
+l19.grid(row=8, column=3, pady=15, sticky="we")
 
 e18 = customtkinter.CTkEntry(app, width=50)
-e18.grid(row=8, column=4, padx=(0,120))
+e18.grid(row=8, column=4, padx=(0,100))
 
-l20 = customtkinter.CTkLabel(app, text="Kecap Rp.10.000", fg_color="transparent",font=("Roboto",20))
-l20.grid(row=9, column=3, pady=15)
+l20 = customtkinter.CTkLabel(app, text="Kecap Rp.10.000", fg_color="transparent",font=("Roboto",20), anchor="w", text_color="white")
+l20.grid(row=9, column=3, pady=15, sticky="we")
 
 e19 = customtkinter.CTkEntry(app, width=50)
-e19.grid(row=9, column=4, padx=(0,120))
+e19.grid(row=9, column=4, padx=(0,100))
 
-l21 = customtkinter.CTkLabel(app, text="Sambal Rp.10.000", fg_color="transparent",font=("Roboto",20))
-l21.grid(row=10, column=3, pady=15)
+l21 = customtkinter.CTkLabel(app, text="Sambal Rp.10.000", fg_color="transparent",font=("Roboto",20), anchor="w", text_color="white")
+l21.grid(row=10, column=3, pady=15, sticky="we")
 
 e20 = customtkinter.CTkEntry(app, width=50)
-e20.grid(row=10, column=4, padx=(0,120))
+e20.grid(row=10, column=4, padx=(0,100))
 
 def total():
     jumlah = []
@@ -200,34 +200,61 @@ def total():
         jumlah.append(jml_e18)
         jumlah.append(jml_e19)
         jumlah.append(jml_e20)
-        bayar = sum(jumlah)
+        global jumlah_belanja
+        jumlah_belanja = sum(jumlah)
     except:
         print("Masukkan angka yang benar!")
 
-    l22.configure(text=f"Total belanja : Rp.{bayar},-")
-    l23.configure(text="Uang Tunai")
+    l22.configure(text=f"Total belanja : Rp.{jumlah_belanja},-")
+    l23.configure(text="Uang Tunai Rp.")
+    global e21
     e21 = customtkinter.CTkEntry(app, width=100, font=("Roboto",17))
-    e21.grid(row=14, column=3)
+    e21.grid(row=14, column=2, sticky="w")
 
+    b5 = customtkinter.CTkButton(app, text="Bayar", command=transaksi, font=("Roboto",20), width=100, height=37, anchor="center")
+    b5.grid(row=14, column=3, sticky="w")
 
+def transaksi():
+    l24.configure(text="")
+    l25.configure(text="")
+    try:
+        uang_tunai = int(e21.get())
+    except:
+        print("Masukkan angka yang benar !")
 
-b1 = customtkinter.CTkButton(app, text="Reset", command=total, font=("Roboto",20), width=100)
-b1.grid(row=13, column=0, pady=(30,0))
+    if uang_tunai < jumlah_belanja:
+        l24.configure(text="Maaf, uang anda tidak cukup !")
 
-b2 = customtkinter.CTkButton(app, text="Statistik", command=total, font=("Roboto",20), width=100, height=40)
-b2.grid(row=14, column=0, pady=(15,0))
+    elif uang_tunai > jumlah_belanja:
+        l24.configure(text="Pembayaran Berhasil !..")
+        kembalian = uang_tunai - jumlah_belanja
+        l25.configure(text=f"Kembalian anda Rp.{kembalian},-")
 
-b3 = customtkinter.CTkButton(app, text="Struk Pembayaran", command=total, font=("Roboto",20), width=100, height=40)
-b3.grid(row=15, column=0, pady=15)
+    elif uang_tunai == jumlah_belanja:
+        l24.configure(text="Pembayaran Berhasil !..")
+
+b1 = customtkinter.CTkButton(app, text="Reset", command=total, font=("Roboto",20), width=100, anchor="w")
+b1.grid(row=13, column=0, pady=(30,0), sticky="w", padx=60)
+
+b2 = customtkinter.CTkButton(app, text="Statistik", command=total, font=("Roboto",20), width=100, height=40, anchor="w")
+b2.grid(row=14, column=0, pady=(15,0), sticky="w", padx=60)
+
+b3 = customtkinter.CTkButton(app, text="Struk Pembayaran", command=total, font=("Roboto",20), width=100, height=40, anchor="w")
+b3.grid(row=15, column=0, pady=15, sticky="w", padx=60)
 
 b4 = customtkinter.CTkButton(app, text="Total", command=total, font=("Roboto",20), width=100, height=40)
-b4.grid(row=13, column=2, pady=(30,0))
+b4.grid(row=13, column=1, pady=(30,0))
 
-
-l22 = customtkinter.CTkLabel(app, text="", fg_color="transparent",font=("Roboto",19))
-l22.grid(row=13, column=3, pady=(30,0))
+l22 = customtkinter.CTkLabel(app, text="", fg_color="transparent",font=("Roboto",19), anchor="w")
+l22.grid(row=13, column=2, pady=(30,0), sticky="we")
 
 l23 = customtkinter.CTkLabel(app, text="", fg_color="transparent",font=("Roboto",19))
-l23.grid(row=14, column=2)
+l23.grid(row=14, column=1)
+
+l24 = customtkinter.CTkLabel(app, text="", fg_color="transparent",font=("Roboto",19), anchor="w")
+l24.grid(row=15, column=1, sticky="we")
+
+l25 = customtkinter.CTkLabel(app, text="", fg_color="transparent",font=("Roboto",19), anchor="w")
+l25.grid(row=15, column=2, sticky="we")
 
 app.mainloop()
