@@ -1,5 +1,21 @@
 import customtkinter
 
+# Ekstra Kredit
+# Kami menerapkan program ini tidak hanya dengan struktur data yang efisien untuk toko andi
+# tapi juga dengan menggunakan tampilan yang lebih modern 
+# Kami menggunakan modul customtkinter untuk mengubah tampilan program ini agar lebih dinamis dan modern
+# Kami menggunakan window yang bertema gelap dan widget dengan warna default biru tua
+# Kami menggunakan beberapa widget seperti: Entry, Button, Tab, Label, Textbox
+# Kami juga memasang ikon pada window ini
+
+
+# Agar Program ini berjalan dengan baik
+# Ada beberapa syarat yang harus dipenuhi yaitu:
+# 1. Menginstall customtkinter pada device anda
+# 2. Mendownload file yang kami sediakan yaitu store.ico
+# 3. Agar tampilannya lebih baik kami sarankan untuk mendowload font Roboto
+
+
 # Struktur Data 
 # Hash, Queue, dan Tree
 
@@ -315,29 +331,29 @@ tabview.grid(row=1, column=0, padx=20, pady=(20,0))
 # Pembuatan Widget
 
 entry = customtkinter.CTkEntry(master=tabview.tab("Tab 1"), placeholder_text="Kode Produk", corner_radius=5, border_width=1, border_color="grey", text_color="white", height=30, font=("Roboto",16))
-button = customtkinter.CTkButton(master=tabview.tab("Tab 1"), text="Cari", height=30, command=cari_kode, width=20, anchor="w")
+button = customtkinter.CTkButton(master=tabview.tab("Tab 1"), text="Cari", height=30, command=cari_kode, width=20)
 textbox = customtkinter.CTkTextbox(master=tabview.tab("Tab 1"), font=("Roboto", 15), text_color="white", state="disabled")
-label2 = customtkinter.CTkLabel(master=tabview.tab("Tab 1"), text="Perbarui Harga", fg_color="transparent", font=("Roboto", 17), anchor="w", text_color="white")
+label2 = customtkinter.CTkLabel(master=tabview.tab("Tab 1"), text="Perbarui Harga", fg_color="transparent", font=("Roboto", 17), text_color="white")
 entry2 = customtkinter.CTkEntry(master=tabview.tab("Tab 1"), placeholder_text="KodeProduk,HargaBaru", corner_radius=5, border_width=1, border_color="grey", text_color="white", height=30, font=("Roboto",16), width=200)
-button2 = customtkinter.CTkButton(master=tabview.tab("Tab 1"), text="Update", height=30, command=update_harga, width=60, anchor="w")
-label3 = customtkinter.CTkLabel(master=tabview.tab("Tab 1"), text="", fg_color="transparent", font=("Roboto", 15), anchor="w", text_color="white")
-label4 = customtkinter.CTkLabel(master=tabview.tab("Tab 1"), text="Perbarui Stok", fg_color="transparent", font=("Roboto", 17), anchor="w", text_color="white")
+button2 = customtkinter.CTkButton(master=tabview.tab("Tab 1"), text="Update", height=30, command=update_harga, width=60)
+label3 = customtkinter.CTkLabel(master=tabview.tab("Tab 1"), text="", fg_color="transparent", font=("Roboto", 15), text_color="white")
+label4 = customtkinter.CTkLabel(master=tabview.tab("Tab 1"), text="Perbarui Stok", fg_color="transparent", font=("Roboto", 17), text_color="white")
 entry3 = customtkinter.CTkEntry(master=tabview.tab("Tab 1"), placeholder_text="KodeProduk,StokBaru", corner_radius=5, border_width=1, border_color="grey", text_color="white", height=30, font=("Roboto",16), width=200)
-button3 = customtkinter.CTkButton(master=tabview.tab("Tab 1"), text="Update", height=30, command=update_stok, width=60, anchor="w")
-label5 = customtkinter.CTkLabel(master=tabview.tab("Tab 1"), text="", fg_color="transparent", font=("Roboto", 15), anchor="w", text_color="white")
+button3 = customtkinter.CTkButton(master=tabview.tab("Tab 1"), text="Update", height=30, command=update_stok, width=60)
+label5 = customtkinter.CTkLabel(master=tabview.tab("Tab 1"), text="", fg_color="transparent", font=("Roboto", 15), text_color="white")
 
 # Peletakan Widget
 
 entry.grid(row=1, column=0)
-button.grid(row=1, column=1, sticky="we")
+button.grid(row=1, column=1)
 textbox.grid(row=2, column=0, pady=20, padx=20)
 label2.grid(row=3, column=0, columnspan=2, pady=(10,0))
 entry2.grid(row=4, column=0)
-button2.grid(row=4, column=1, sticky="we")
+button2.grid(row=4, column=1)
 label3.grid(row=5, column=0, columnspan=2)
 label4.grid(row=6, column=0, columnspan=2, pady=(10,0))
 entry3.grid(row=7, column=0)
-button3.grid(row=7, column=1, sticky="we")
+button3.grid(row=7, column=1)
 label5.grid(row=8, column=0, columnspan=2)  
 
 
@@ -347,29 +363,29 @@ label5.grid(row=8, column=0, columnspan=2)
 # Pembuatan Widget
 
 entry4 = customtkinter.CTkEntry(master=tabview.tab("Tab 2"), placeholder_text="Kategori Produk", corner_radius=5, border_width=1, border_color="grey", text_color="white", height=30, font=("Roboto",16))
-button4 = customtkinter.CTkButton(master=tabview.tab("Tab 2"), text="Cari", height=30, command=cari_kategori, width=40, anchor="w")
+button4 = customtkinter.CTkButton(master=tabview.tab("Tab 2"), text="Cari", height=30, command=cari_kategori, width=40)
 textbox2 = customtkinter.CTkTextbox(master=tabview.tab("Tab 2"), font=("Roboto", 15), text_color="white", state="disabled")
-label6 = customtkinter.CTkLabel(master=tabview.tab("Tab 2"), text="Perbarui Harga", fg_color="transparent", font=("Roboto", 17), anchor="w", text_color="white")
+label6 = customtkinter.CTkLabel(master=tabview.tab("Tab 2"), text="Perbarui Harga", fg_color="transparent", font=("Roboto", 17), text_color="white")
 entry5 = customtkinter.CTkEntry(master=tabview.tab("Tab 2"), placeholder_text="Kategori,Nama,HargaBaru", corner_radius=5, border_width=1, border_color="grey", text_color="white", height=30, font=("Roboto",16), width=200)
-button5 = customtkinter.CTkButton(master=tabview.tab("Tab 2"), text="Update", height=30, command=update_harga_, width=60, anchor="w")
-label7 = customtkinter.CTkLabel(master=tabview.tab("Tab 2"), text="", fg_color="transparent", font=("Roboto", 15), anchor="w", text_color="white")
-label8 = customtkinter.CTkLabel(master=tabview.tab("Tab 2"), text="Perbarui Stok", fg_color="transparent", font=("Roboto", 17), anchor="w", text_color="white")
+button5 = customtkinter.CTkButton(master=tabview.tab("Tab 2"), text="Update", height=30, command=update_harga_, width=60)
+label7 = customtkinter.CTkLabel(master=tabview.tab("Tab 2"), text="", fg_color="transparent", font=("Roboto", 15), text_color="white")
+label8 = customtkinter.CTkLabel(master=tabview.tab("Tab 2"), text="Perbarui Stok", fg_color="transparent", font=("Roboto", 17), text_color="white")
 entry6 = customtkinter.CTkEntry(master=tabview.tab("Tab 2"), placeholder_text="Kategori,Nama,StokBaru", corner_radius=5, border_width=1, border_color="grey", text_color="white", height=30, font=("Roboto",16), width=200)
-button6 = customtkinter.CTkButton(master=tabview.tab("Tab 2"), text="Update", height=30, command=update_stok_, width=60, anchor="w")
-label9 = customtkinter.CTkLabel(master=tabview.tab("Tab 2"), text="", fg_color="transparent", font=("Roboto", 15), anchor="w", text_color="white")
+button6 = customtkinter.CTkButton(master=tabview.tab("Tab 2"), text="Update", height=30, command=update_stok_, width=60)
+label9 = customtkinter.CTkLabel(master=tabview.tab("Tab 2"), text="", fg_color="transparent", font=("Roboto", 15), text_color="white")
 
 # Peletakan Widget
 
 entry4.grid(row=1, column=0)
-button4.grid(row=1, column=1, sticky="we")
+button4.grid(row=1, column=1)
 textbox2.grid(row=2, column=0, pady=20, padx=20)
 label6.grid(row=3, column=0, columnspan=2, pady=(10,0))
 entry5.grid(row=4, column=0)
-button5.grid(row=4, column=1, sticky="we")
+button5.grid(row=4, column=1)
 label7.grid(row=5, column=0, columnspan=2,pady=5)
 label8.grid(row=6, column=0, columnspan=2, pady=(10,0))
 entry6.grid(row=7, column=0)
-button6.grid(row=7, column=1, sticky="we")
+button6.grid(row=7, column=1)
 label9.grid(row=8, column=0, columnspan=2)
 
 
@@ -386,8 +402,8 @@ button8 = customtkinter.CTkButton(app, text="Hapus", height=30, command=hapus_an
 # Peletakan Widget
 
 label10.grid(row=1, column=2, columnspan=2, padx=20)
-label11.grid(row=9, column=0, padx=20, pady=(10,0), sticky="we")
-label12.grid(row=9, column=1, padx=20, pady=(10,0), sticky="we")
+label11.grid(row=9, column=0, padx=20, pady=(10,0))
+label12.grid(row=9, column=1, padx=20, pady=(10,0))
 button7.grid(row=10, column=0, pady=(20,0))
 button8.grid(row=10, column=1, pady=(20,0))
 
